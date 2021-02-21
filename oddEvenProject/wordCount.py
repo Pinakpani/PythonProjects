@@ -10,11 +10,11 @@ ask = ''
 while True:
     if cnt==0 and len(user)>0:
         res=wordCount(user)
-        ask=input(res+"Would you like to say something now?(Yes/No)")
+        ask=input(res+" Would you like to say something now?(Yes/No)")
     elif ask.upper()=='Y' or ask.upper()=="YES":
-        user = input("What's on your mind today?")
+        user = input("What's on your mind this time?")
         res = wordCount(user)
-        ask = input(res + "Would you like to say something now?(Yes/No)")
+        ask = input(res + " Would you like to say something now?(Yes/No)")
     elif ask.upper()=='N' or ask.upper()=="NO":
             print("Thank you for visiting. Bye!!!")
             break
